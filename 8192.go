@@ -59,6 +59,17 @@ var (
                 "http://web.archive.org/web/20230000000000*/",
                 "https://www.reddit.com/search/?q=",
                 "https://www.quora.com/search?q=",
+                "https://check-host.net/",
+		"https://www.facebook.com/",
+		"https://www.youtube.com/",
+		"https://www.fbi.com/",
+		"https://r.search.yahoo.com/",
+		"https://www.cia.gov/index.html",
+		"https://vk.com/profile.php?auto=",
+		"https://help.baidu.com/searchResult?keywords=",
+		"https://steamcommunity.com/market/search?q=",
+		"https://www.ted.com/search?q=",
+		"https://play.google.com/store/search?q=",
 	}
 	headersUseragents []string = []string{
 "Mozilla/5.0 (Linux; U; Android 4.4.3; en-us; KFSAWA Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.68 like Chrome/39.0.2171.93 Safari/537.36",
