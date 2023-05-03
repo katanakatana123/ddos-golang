@@ -112,7 +112,7 @@ func main() {
 	t := os.Getenv("DRAKESMAXPROCS")
 	maxproc, err := strconv.Atoi(t)
 	if err != nil {
-		maxproc = 2048 //TỐC ĐỘ 512, 1024, 2048, 4096 //chọn tốc độ ở đây
+		maxproc = 1000 //TỐC ĐỘ 512, 1024, 2048, 4096 //chọn tốc độ ở đây
 	}
 
 	u, err := url.Parse(site)
