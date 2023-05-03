@@ -74,10 +74,9 @@ var (
 		"https://play.google.com/store/search?q=",
 	}
 	headersUseragents []string = []string{
-"cf_clearance=kg8ms6fZNhqNhWF_y58mA.w_oZ2oaQQH7amSssle5XI-1683045837-0-250; xfa_csrf=Nzvh_fhFmvf9X1eK; xfa_user=443659%2Css4feY2DflpYhr8Vc3jtcp_b_q-MFrS_Bnf9QqlI; xfa_session=LwhCnCJDWLWuT_6xvn_luxmrIDODHJTO",
-"cf_clearance=LEYXHCve_FGcllx_BuqbAz7fwYKmdKVfdw9Asjxb9jw-1683082458-0-160; xfa_user=443658%2Cg_4o3XN6K4Jywv1dPw-7a1GhkYveJBgoSa9wUWFc; xfa_csrf=9S_aqMmoNq5bqJ-w; xfa_session=Fy-C4Te68IU14SBTQBPd7zmD33-UVDJM",
-"cf_clearance=tiQggH2GqK.LFUEMu9YhLKmBzKqD2A1uoVl53uXaB1Q-1683045824-0-250; xfa_user=443662%2CrTQ-qi1iQ28Q__hYmMyPEZtLaXqQnwNosu2bVXX0; xfa_csrf=9Szr7NlDO14FjP6H; xfa_session=C1u2HvSUToeWXv7yUTBMYBSD_m1W6xG5",
-		"cf_clearance=ssDBEQH_MMdRHUnDg0ABPH5NxioTpzuVIqNw6eGBrLw-1683046167-0-250; xfa_user=443661%2C2rYfeGsw630vT_-3aRTS07KWxHSGj61GfBeUEYbP; xfa_csrf=llMaTNgZYasp09E9; xfa_session=Nnoj_e0_b-OUOPo2vbaPUiPbfUT15uVK",
+		"cf_clearance=tiQggH2GqK.LFUEMu9YhLKmBzKqD2A1uoVl53uXaB1Q-1683045824-0-250; xfa_user=443662%2CrTQ-qi1iQ28Q__hYmMyPEZtLaXqQnwNosu2bVXX0",
+"cf_clearance=ssDBEQH_MMdRHUnDg0ABPH5NxioTpzuVIqNw6eGBrLw-1683046167-0-250; xfa_user=443661%2C2rYfeGsw630vT_-3aRTS07KWxHSGj61GfBeUEYbP",
+		
 	}
 	cur int32
 )
